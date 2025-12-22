@@ -28,8 +28,8 @@ fbq('track', 'PageView');
 <img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=854022320703423&ev=PageView&noscript=1"/>
 </noscript>
-<!-- ================= END META PIXEL ================= -->
 
+<!-- ================= STYLES ================= -->
 <style>
 :root{
 --bg:#fefefe;
@@ -206,21 +206,22 @@ margin-top:20px;
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
 
-/* ===== ONE CLICK TELEGRAM SUBSCRIBE EVENT ===== */
-let subscribed = false;
+/* ===== ONE CLICK CUSTOM TELEGRAM SUBSCRIBE EVENT ===== */
+let subscribeFired = false;
 document.getElementById('telegramJoinBtn').addEventListener('click', function(e){
-  if(!subscribed){
-    e.preventDefault(); // prevent instant redirect
+  if(!subscribeFired){
+    e.preventDefault(); // prevent double fire due to fast redirect
 
-    fbq('track', 'Subscribe', {
-      content_name: 'Telegram Channel'
+    fbq('trackCustom', 'TelegramSubscribe', {
+      channel: 'Gujarati Trader',
+      timestamp: new Date().toISOString()
     });
 
-    subscribed = true;
+    subscribeFired = true;
 
     setTimeout(() => {
       window.location.href = this.href;
-    }, 400); // enough time for Meta Pixel to fire
+    }, 400); // allow pixel to fire before redirect
   }
 });
 </script>

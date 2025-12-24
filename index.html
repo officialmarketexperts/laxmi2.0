@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="gu">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gujarati Trader™ | Private Market Intelligence</title>
+<title>Gujarati Trader</title>
 
-<!-- Meta Pixel Code -->
+<!-- ================= META PIXEL (NEW ONLY) ================= -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -15,206 +15,175 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+
+
 fbq('init', '854022320703423');
 fbq('track', 'PageView');
+
+
 </script>
-<noscript><img height="1" width="1" style="display:none"
+<noscript>
+<img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=854022320703423&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
-  
+<!-- ================= END META PIXEL ================= -->
+
 <style>
-:root{
-  --gold:#c9a24d;
-  --dark:#060606;
-  --soft:#9a9a9a;
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Inter', 'Poppins', sans-serif;
-}
-
+*{box-sizing:border-box}
 body{
-  background:radial-gradient(circle at top, #0e0e0e, #000);
-  color:#fff;
+ margin:0;
+ font-family:Segoe UI,Arial,sans-serif;
+ background:linear-gradient(180deg,#eef2ff,#f8fafc);
+ color:#111;
+ text-align:center;
 }
 
-/* MAIN */
-.wrapper{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:50px 18px;
-}
-
-.card{
-  max-width:520px;
-  width:100%;
-  background:linear-gradient(180deg,#0c0c0c,#020202);
-  border-radius:26px;
-  padding:48px 30px;
-  text-align:center;
-  border:1px solid rgba(201,162,77,.25);
-  box-shadow:
-    0 40px 120px rgba(0,0,0,.9),
-    inset 0 0 40px rgba(201,162,77,.04);
+/* MAIN CARD */
+.container{
+ max-width:420px;
+ margin:28px auto;
+ background:#ffffff;
+ border-radius:22px;
+ padding:30px 18px 40px;
+ box-shadow:0 25px 60px rgba(0,0,0,.12);
 }
 
 /* LOGO */
-.logo-ring{
-  width:110px;
-  height:110px;
-  margin:0 auto;
-  border-radius:50%;
-  padding:3px;
-  background:linear-gradient(135deg,#e6c36a,#8d6b1f);
+.logo{
+ width:140px;
+ height:140px;
+ border-radius:50%;
+ margin:10px auto 14px;
+ box-shadow:0 12px 28px rgba(0,0,0,.25);
+ overflow:hidden;
+ border:4px solid #e5e7eb;
 }
-.logo-ring img{
-  width:100%;
-  height:100%;
-  border-radius:50%;
-  object-fit:cover;
-}
-
-/* NAME */
-.brand{
-  margin-top:26px;
-  font-size:28px;
-  font-weight:700;
-  letter-spacing:.4px;
-  color:var(--gold);
+.logo img{
+ width:100%;
+ height:100%;
+ object-fit:cover;
 }
 
-/* TAGLINE */
-.tagline{
-  margin-top:10px;
-  font-size:13px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:#777;
+/* TITLE */
+h1{
+ font-size:30px;
+ font-weight:900;
+ margin:10px 0 6px;
+ letter-spacing:.6px;
+}
+.subs{
+ font-size:14px;
+ color:#6b7280;
+ margin-bottom:18px;
 }
 
-/* PRIMARY TEXT */
-.copy{
-  margin-top:28px;
-  font-size:16px;
-  line-height:1.9;
-  color:#d0d0d0;
+/* INFO */
+.info{
+ font-size:15px;
+ line-height:1.8;
+ color:#374151;
+ margin:10px 0 26px;
+}
+.info div{
+ margin:7px 0;
 }
 
-.copy b{
-  color:#fff;
-  font-weight:600;
-}
-
-/* CENTER CTA */
-.cta-wrap{
-  margin-top:42px;
-  display:flex;
-  justify-content:center;
-}
-
+/* BUTTON */
 .join-btn{
-  width:100%;
-  max-width:360px;
-  padding:20px;
-  border-radius:14px;
-  background:linear-gradient(90deg,#b11f2b,#1f4fb1);
-  color:#fff;
-  text-decoration:none;
-  font-size:18px;
-  font-weight:700;
-  letter-spacing:.3px;
-  box-shadow:
-    0 30px 60px rgba(0,0,0,.85),
-    0 0 0 1px rgba(255,255,255,.05);
-  transition:.35s ease;
+ display:block;
+ width:100%;
+ max-width:360px;
+ margin:0 auto 20px;
+ padding:17px;
+ font-size:18px;
+ font-weight:900;
+ color:#fff;
+ text-decoration:none;
+ border-radius:14px;
+ background:linear-gradient(90deg,#2563eb,#4f46e5);
+ box-shadow:0 14px 32px rgba(79,70,229,.45);
+ transition:.25s ease;
 }
-
-/* JAMAVAT – SOFT, CLASSY */
 .join-btn:hover{
-  transform:translateY(-2px) scale(1.015);
-  box-shadow:
-    0 45px 80px rgba(0,0,0,.9),
-    0 0 25px rgba(177,31,43,.25);
+ transform:translateY(-2px);
+ box-shadow:0 18px 38px rgba(79,70,229,.55);
 }
 
 /* TRUST */
+.stars{
+ font-size:20px;
+ color:#f59e0b;
+ margin-bottom:8px;
+}
 .trust{
-  margin-top:30px;
-  font-size:13px;
-  line-height:1.8;
-  color:var(--soft);
+ font-size:13px;
+ color:#6b7280;
+ margin-bottom:18px;
 }
 
 /* FOOTER */
 .footer{
-  margin-top:34px;
-  font-size:11px;
-  color:#666;
+ font-size:12px;
+ color:#9ca3af;
+ line-height:1.6;
 }
 </style>
 </head>
 
 <body>
 
-<div class="wrapper">
-  <div class="card">
+<div class="container">
 
-    <!-- LOGO -->
-    <div class="logo-ring">
-      <img src="https://uploads.onecompiler.io/445e5df86/445tc7ue3/330.png" alt="Gujarati Trader Logo">
-    </div>
+<!-- LOGO -->
+<div class="logo">
+ <img src="https://uploads.onecompiler.io/445e5df86/445tc7ue3/330.png" alt="Gujarati Trader">
+</div>
 
-    <!-- BRAND -->
-    <div class="brand">Gujarati Trader™</div>
-    <div class="tagline">Private Market Intelligence</div>
+<!-- TITLE -->
+<h1>GUJARATI TRADER</h1>
+<div class="subs">20,000+ learners • Trusted community</div>
 
-    <!-- TEXT -->
-    <div class="copy">
-      Ye channel un logon ke liye hai  
-      jo stock market ko <b>signal nahi, business</b> samajhte hain.<br><br>
+<!-- INFO -->
+<div class="info">
+ <div>📊 <b>Market Education & Chart Reading</b></div>
+ <div>📈 Nifty • BankNifty • Stock Analysis</div>
+ <div>🛡️ Risk Management & Discipline</div>
+ <div>🎯 Learn with clarity, not false promises</div>
+</div>
 
-      <b>No hype. No noise.</b><br>
-      Sirf disciplined thinking,  
-      risk control aur long-term clarity —  
-      woh bhi <b>Gujarati language</b> mein.
-    </div>
+<!-- BUTTON -->
+<a class="join-btn" id="joinBtn"
+ href="https://t.me/+8Fple4mmjgMzNWFl"
+ target="_blank">
+JOIN TELEGRAM CHANNEL
+</a>
 
-    <!-- CTA -->
-    <div class="cta-wrap">
-      <a href="https://t.me/+8Fple4mmjgMzNWFl"
-         target="_blank"
-         class="join-btn"
-         onclick="trackJoin()">
-        Join the Private Channel
-      </a>
-    </div>
+<!-- TRUST -->
+<div class="stars">⭐⭐⭐⭐⭐</div>
+<div class="trust">Rated highly by community learners</div>
 
-    <!-- TRUST -->
-    <div class="trust">
-      • Serious traders only<br>
-      • Capital protection first<br>
-      • Educational & experience based
-    </div>
+<!-- FOOTER -->
+<div class="footer">
+Educational purpose only. No tips, no guarantees.<br>
+Market participation involves risk.
+</div>
 
-    <div class="footer">
-      Educational Purpose Only · Market Risk Applies
-    </div>
-
-  </div>
 </div>
 
 <script>
-function trackJoin(){
-  if(typeof fbq === 'function'){
-    fbq('track','Subscribe');
+/* TELEGRAM CLICK TRACKING */
+document.addEventListener("DOMContentLoaded", function () {
+  const joinBtn = document.getElementById("joinBtn");
+  if (joinBtn) {
+    joinBtn.addEventListener("click", function () {
+      if (typeof fbq === 'function') {
+        fbq('trackCustom','JoinTelegram');
+        fbq('track','Lead');
+      }
+      this.style.pointerEvents = "none";
+    });
   }
-}
+});
 </script>
 
 </body>
